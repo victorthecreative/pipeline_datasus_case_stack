@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: API_datasus
+    description: Fonte da API dos dados de vacinação da covid19
+    schema: API_datasus
+    tables:
+      - name: datasus_vacinacao_COVID19  # enabled
+        description: Tabela geral com as informações sobre a aplicação de vacinas no Brasil.
+        columns:
+          - name: paciente_id
+            description: Chave primaria da tabela datasus_vacinacao_COVID19
+            tests: 
+              - unique
+              - not_null
+              
+              

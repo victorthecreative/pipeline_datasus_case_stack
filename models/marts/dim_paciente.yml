@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: dim_paciente  
+    description: Esta tabela tras as informação de cada paciente imunizado contra a COVID-19.  
+    columns:
+      - name: paciente_sk
+        description: "Chave surrogada para o paciente."
+        tests:
+          - unique
+          - not_null
+      - name: paciente_id
+        description: "Identificador único do paciente."
+        tests:
+          - unique
+          - not_null
+      - name: idade
+        description: "Idade do paciente."
+        tests:
+          - not_null
+      - name: sexo
+        description: "Sexo do paciente."
+        tests:
+          - not_null
+      - name: raca_id
+        description: "Identificador único da raça do paciente."
+        tests:
+          - not_null
+      - name: raca_descricao
+        description: "Descrição da raça do paciente."
+        tests:
+          - not_null
