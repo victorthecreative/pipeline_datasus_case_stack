@@ -1,6 +1,11 @@
 WITH
     base as (
-        select *
+        select DISTINCT
+            paciente_id
+            , idade
+            , sexo
+            , raca_id
+            , raca_descricao
         from {{ ref('stg_APIdatasus_geral') }}
     ),
     transformacoes as (
