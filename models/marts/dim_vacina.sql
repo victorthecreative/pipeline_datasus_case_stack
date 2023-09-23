@@ -1,6 +1,6 @@
-WITH
+with
     base as (
-        select DISTINCT
+        select distinct
             vacina_nome
             , dose
         from {{ ref('stg_APIdatasus_geral') }}

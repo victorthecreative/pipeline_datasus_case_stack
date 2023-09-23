@@ -1,6 +1,6 @@
-WITH
+with
     base as (
-        select DISTINCT
+        select distinct
             municipio,
             estado
         from {{ ref('stg_APIdatasus_geral') }}
