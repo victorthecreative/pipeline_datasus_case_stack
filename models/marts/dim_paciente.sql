@@ -1,3 +1,14 @@
+{{
+    config(
+        materialized='table'
+        , cluster_by=[
+            'paciente_id'
+            ,'raca_id'
+            , 'sexo'
+        ]
+    )
+}}
+
 with
     base as (
         select distinct

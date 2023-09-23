@@ -1,3 +1,13 @@
+{{
+    config(
+        materialized='table'
+        , cluster_by=[
+            'vacina_nome'
+        ]
+    )
+}}
+
+
 with
     base as (
         select distinct
