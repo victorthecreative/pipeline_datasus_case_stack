@@ -44,6 +44,10 @@ A arquitetura do projeto é composta pelas seguintes etapas e componentes:
 2. **Ingestão no BigQuery:** Os dados são processados pelo Apache Beam e Dataflow e inseridos no BigQuery.
 3. **Modelagem com dbt:** Dentro do BigQuery, o dbt é utilizado para criar tabelas dimensões e uma tabela fato, estruturando os dados para análises.
 4. **Análise e Consulta:** Os dados modelados estão disponíveis para análise e consulta no BigQuery, Firestore e PostgreSQL.
+5. **Dataviz**: Como os dados modelos estão disponiveis, podemos usar o Power BI para criar visualizações, como a que esta abaixo, que foi criado com o sample que extraimos a API:
+   
+   <img width="665" alt="image" src="https://github.com/victorthecreative/pipeline_datasus_case_stack/assets/50841013/1276471e-d468-4527-b634-e3a35ccc6e74">
+
 
 ## Bibliotecas e Ferramentas Utilizadas
 
