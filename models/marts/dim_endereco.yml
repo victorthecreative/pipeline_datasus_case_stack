@@ -1,8 +1,8 @@
 version: 2
 
 models:
-  - name: nome_do_seu_modelo  # Substitua pelo nome real do seu modelo
-    description: "Descrição do seu modelo."  # Adicione uma descrição adequada para o seu modelo
+  - name: dim_endereco  
+    description: "Descrição do seu modelo." 
     columns:
       - name: municipio_estado_sk
         description: "Chave surrogada para a combinação única de município e estado."
