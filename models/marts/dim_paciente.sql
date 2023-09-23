@@ -1,6 +1,6 @@
-WITH
+with
     base as (
-        select DISTINCT
+        select distinct
             paciente_id
             , idade
             , sexo
