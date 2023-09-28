@@ -5,7 +5,8 @@ Este projeto consiste em uma pipeline de dados que coleta, transforma, modela e 
 ## Arquitetura
 
 A arquitetura do projeto é composta pelas seguintes etapas e componentes:
-![image](https://github.com/victorthecreative/pipeline_datasus_case_stack/assets/50841013/3bd01aca-cacc-492c-a4d4-4a47849a261b)
+
+![image](https://github.com/victorthecreative/pipeline_datasus_case_stack/assets/50841013/e60c5c60-acd3-4f81-801e-3f4e2cc27ead)
 
 1. **Coleta de Dados:**
 
@@ -39,6 +40,7 @@ A arquitetura do projeto é composta pelas seguintes etapas e componentes:
    - **Logging:** Registro de eventos e erros durante a execução dos scripts.
 
 ## Fluxo de Dados
+![image](https://github.com/victorthecreative/pipeline_datasus_case_stack/assets/50841013/3bd01aca-cacc-492c-a4d4-4a47849a261b)
 
 1. **Coleta e Transformação Inicial:** Os dados são coletados da API do DataSUS, transformados e salvos em diferentes formatos e armazenamentos.
 2. **Ingestão no BigQuery:** Os dados são processados pelo Apache Beam e Dataflow e inseridos no BigQuery.
